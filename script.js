@@ -152,7 +152,7 @@ checkoutBtn.addEventListener("click", function () {
   inputCartSend.value = JSON.stringify(cart);
   inputTable.value = `Mesa ${tableParams}`;
 
-  const homeUrl = `http://127.0.0.1:5501/index.html?table=${tableParams}`
+  const homeUrl = `https://pedido-email.vercel.app/?table=${tableParams}`
 
   inputRedirect.value= homeUrl;
 
