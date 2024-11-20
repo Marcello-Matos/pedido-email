@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <title>Cardapio Menu</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./styles/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-home bg-cover bg-center">
+    <div class="w-full h-full text-center text-white flex flex-col justify-center items-center">
+      <img src="./assets/logo original.svg" alt="Logo JD" class="w-32 h-32 mx-auto rounded-full shadow-lg hover:scale-110 duration-200" />
+      <h1 class="text-4xl mt-4 mb-2 font-bold">Confraternização JD</h1>
+
+      <span class="text-white font-medium">Rua 123456, Alphaville Centro SP</span>
+
+      <div id="horario-card" class="bg-green-500 px-4 py-1 rounded-lg mt-4">
+        <span id="horario-text" class="inline-block w-auto max-w-xs text-center">Seg á Dom: 18h00 até as 23h00 - Fechado!</span>
+      </div>
+
+      <!--<div class="bg-green-600 px-4 py-1 rounded mt-5 id=date-span">
+          <span class="text-white font-medium">
+            Seg á Dom às 21h00 até as 23h00
+          </span>
+          <span id="date-span" class="bg-red-500">Fechado</span>
+        </div>-->
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça o nosso menu
+  </h2>
+  <!-- INICIO MENU -->
+  <div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      <!-- INICIO PRODUTO ITEM 1-->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/coffe.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Capuccino</p>
+          <p class="text-sm">
+            Uma combinação clássica e sofisticada de café espresso, leite
+            vaporizado e uma camada cremosa de espuma de leite. O Cappuccino
+            oferece um equilíbrio perfeito entre a intensidade do café e a
+            suavidade do leite, com uma textura aveludada e sabor envolvente.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Capuccino" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 1 -->
+
+      <!-- INICIO PRODUTO ITEM 2 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/coffe1.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Café espresso shot</p>
+          <p class="text-sm">
+            Um café intenso e marcante, o Espresso Shot é a essência do sabor.
+            Preparado com grãos frescos moídos na hora, ele traz uma dose
+            concentrada de energia, com equilíbrio perfeito entre acidez,
+            doçura e amargor.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Café espresso shot" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 2 -->
+
+      <!-- INICIO PRODUTO ITEM 3 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/chocolate-quente.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chocolate Quente</p>
+          <p class="text-sm">
+            Uma bebida aconchegante e deliciosa feita com leite aquecido e
+            chocolate derretido ou cacau em pó. Cremoso e rico, é
+            frequentemente adoçado e pode ser servido com chantilly,
+            marshmallows ou canela para um toque especial. Ideal para aquecer
+            dias frios e proporcionar conforto em qualquer momento.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chocolate Quente" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 3 -->
+
+      <!-- INICIO PRODUTO ITEM 4 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/agua.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Água Tradicional</p>
+          <p class="text-sm">
+            Fundamental para todos os processos biológicos, é indispensável
+            para hidratação, regulação da temperatura corporal e várias
+            funções vitais. Ela é consumida diariamente por seres humanos,
+            animais e plantas, sendo a substância mais abundante e importante
+            no planeta.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Água Tradicional" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 4 -->
+
+      <!-- INICIO PRODUTO ITEM 5 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/agua-gas.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Água com Gás</p>
+          <p class="text-sm">
+            A água com gás é uma variação da água mineral que contém dióxido
+            de carbono dissolvido, o que a torna efervescente. Refrescante e
+            leve, é uma alternativa popular à água comum ou refrigerantes,
+            oferecendo uma experiência de sabor mais intensa e borbulhante.
+            Muitas vezes consumida sozinha ou como base para drinques, é ideal
+            para quem aprecia uma bebida leve e com um toque de frescor.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Água com gás" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 5 -->
+
+      <!-- INICIO PRODUTO ITEM 6 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/cha-camomila.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chá de Camomila</p>
+          <p class="text-sm">
+            Conhecido por suas propriedades calmantes e relaxantes, é
+            amplamente utilizado para ajudar a reduzir o estresse, a ansiedade
+            e melhorar a qualidade do sono.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chá de Camomila" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 6 -->
+
+      <!-- INICIO PRODUTO ITEM 7 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/cha-frutas.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chá de Frutas Vermelhas</p>
+          <p class="text-sm">
+            O chá de frutas vermelhas é uma infusão saborosa feita a partir de
+            uma mistura de frutas como morango, framboesa, amora e cereja.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chá de Frutas Vermelhas" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 7 -->
+
+      <!-- INICIO PRODUTO ITEM 8 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/cha-hortela.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chá de Hortelã</p>
+          <p class="text-sm">
+            O chá de hortelã é uma infusão refrescante feita com as folhas de
+            hortelã, conhecida por seu sabor suave e aroma agradável.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chá de Hortelã" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 8 -->
+
+      <!-- INICIO PRODUTO ITEM 9 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/cha-cidreira.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chá de Erva Cidreira</p>
+          <p class="text-sm">
+            O chá de erva-cidreira é uma infusão feita com as folhas da planta
+            conhecida por seu aroma cítrico e refrescante.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chá de Erva Cidreira" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 9 -->
+
+      <!-- INICIO PRODUTO ITEM 10 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/barra-cereal.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Barra de Cereal</p>
+          <p class="text-sm">
+            Rica em fibras, vitaminas e minerais, ela oferece energia rápida e
+            ajuda a manter a saciedade por mais tempo.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Barra de Cereal" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 10 -->
+
+      <!-- INICIO PRODUTO ITEM 11 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/energetico-jd.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Energético JD</p>
+          <p class="text-sm">
+            O energético é uma bebida formulada para aumentar a disposição e
+            combater o cansaço, geralmente contendo cafeína, taurina, glicose
+            e vitaminas do complexo B.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Energetico JD" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 11 -->
+
+      <!-- INICIO PRODUTO ITEM 12 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/energetico-zero.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Energético JD Zero Açúcar</p>
+          <p class="text-sm">
+            O energético zero açúcar é uma versão da bebida energética
+            tradicional, mas sem adição de açúcar, utilizando adoçantes
+            artificiais ou naturais para proporcionar o sabor doce.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Energetico JD Zero Açúcar" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 12 -->
+
+      <!-- INICIO PRODUTO ITEM 13 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/chocolate-talento.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chocolate Talento</p>
+          <p class="text-sm">
+            Cada barra combina o sabor marcante do chocolate Garoto com
+            ingredientes selecionados, proporcionando uma experiência única
+            aos apreciadores.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chocolate Talento" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 13 -->
+
+      <!-- INICIO PRODUTO ITEM 14 -->
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <img src="./assets/trident.png" alt="Coffe espresso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Chiclete Trident</p>
+          <p class="text-sm">
+            O Trident é reconhecido por suas propriedades que auxiliam na
+            saúde bucal, como a prevenção de cáries e a redução de placa
+            bacteriana.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">Free</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chiclete Trident" data-price="Free">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM PRODUTO ITEM 14 -->
+    </main>
+  </div>
+  <!-- FIM DO MENU END -->
+
+  <!-- START MODAL CART -->
+
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden" id="cart-modal">
+    <form id="send-form"action="https://api.staticforms.xyz/submit" method="post">
+      <input type="text" name="honeypot" style="display:none">
+      <input type="hidden" name="accessKey" value="ed15c12d-cb43-47cf-b91a-f8bbc59b83a6">
+      <input type="hidden" name="subject" value="Novo Pedido">
+      <input id="input-redirect" type="hidden" name="redirectTo" value="">
+      <input id="input-table" type="text" name="name" value="Mesa" hidden>
+      <textarea id="input-cart-send" name="message" hidden></textarea>
+
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">Free</span></p>
+
+        <p class="font-bold mt-3">Número da Mesa:<span id="table-number"></span></p>
+        <!-- 
+        <input
+          type="text"
+          placeholder="Digite o número da mesa..."
+          id="address"
+          class="w-full boder-2 p-1 rounded my-1"
+        />
+        -->
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite o número da mesa
+        </p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-model-btn">Fechar</button>
+          <button  id="checkout-btn" class="bg-green-500 text-white px-4 rounded">
+            Finalizar Pedido
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- END MODAL CART -->
+
+  <!-- START BUTTOON CART FOOTER -->
+
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items justify-center">
+    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+      (<span id="cart-count">0</span>) Veja meu Carrinho
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+
+  <!-- BUTTOON CART FOOTER END -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
